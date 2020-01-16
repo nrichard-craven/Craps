@@ -14,7 +14,7 @@ public class Craps
         String response = "Y";
         System.out.println("Would you like instructions for how to play?(Y or N)");
         String response2 = in.nextLine();
-        if (response2.equals("Y")) // ignore case 
+        if (response2.equalsIgnoreCase("Y")) 
         {
             System.out.println("You start by rolling two die.");
             System.out.println("If you roll a 7 or 11 you win. A 2,3,12 is a loss."); 
@@ -79,6 +79,6 @@ public class Craps
                 response = "Y";
             }
         }
-        //goodbye message
+        System.out.println("Thanks for playing!");
     }
 }
